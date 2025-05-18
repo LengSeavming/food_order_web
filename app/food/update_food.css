@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-contain1
+{
+    padding: 20px 200px;
+    background-color: #f5f5f5;
+    min-height: 90%;
+}
+
+.wrapper1 
+{
+    background-color: #ffffff;
+    padding: 5px 10px;
+    max-width:500px;
+    /* margin: 0 auto; */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.wrapper1 h1 
+{
+    font-size: 28px;
+    color: #333;
+    padding-top:50px;
+    text-align: center;
+}
+
+.tbl-31 
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tbl-31 td 
+{
+    padding: 12px 10px;
+    vertical-align: top;
+}
+
+.tbl-31 input[type="text"],
+.tbl-31 input[type="number"],
+.tbl-31 input[type="file"],
+.tbl-31 textarea,
+.tbl-31 select 
+{
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.tbl-31 input[type="radio"] 
+{
+    margin-right: 8px;
+    
+}
+
+.btn-secondary1 
+{
+    width: 90px;
+    height: 40px;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-secondary1:hover 
+{
+    background-color: #2980b9;
+}

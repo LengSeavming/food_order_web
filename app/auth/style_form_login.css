@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-black-meat-western-food-banner-background-image_194600.jpg') no-repeat center center/cover;
+}
+
+/* Frosted Glass Effect */
+.login-container {
+    position: relative;
+    background: rgb(246, 246, 246);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Form Elements */
+h2 {
+    color: rgb(87, 30, 30);
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    color: rgb(78, 114, 4);
+    font-weight: 500;
+}
+
+.input-field {
+    position: relative;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 35px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(19, 218, 178, 0.2);
+    color: rgb(231, 127, 127);
+    outline: none;
+}
+
+.input-field i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(8, 155, 228);
+}
+
+/* Remember Me and Forgot Password */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    color: rgb(5, 77, 3);
+}
+
+.remember-forgot a {
+    color: #bd1181;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: rgb(214, 211, 13);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: rgba(51, 0, 255, 0.8);
+}
+
+/* Register Link */
+.register-link {
+    margin-top: 10px;
+    color: rgb(92, 5, 5);
+    font-size: 14px;
+}
+
+.register-link a {
+    color: rgb(53, 13, 185);
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

@@ -1,0 +1,78 @@
+/* Main container for Add Food */
+.main-container1 {
+    padding: 10px;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form wrapper */
+.wrapper1 {
+    background-color: #ffffff;
+    border-radius: 12px;
+    position: relative;
+    /* position: absolute; */
+    padding: 10px;
+    max-width: 550px;
+    left: 20%;
+    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Heading style */
+.wrapper1 h1 {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 30px;
+    color: #333333;
+    /* margin-bottom: 10px; */
+}
+
+/* Table styling */
+.tbl-30_1 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tbl-30_1 td {
+    padding: 12px 15px;
+    vertical-align: top;
+    font-size: 17px;
+    color: #333;
+}
+
+/* Inputs and Selects */
+.tbl-30_1 input[type="text"],
+.tbl-30_1 input[type="number"],
+.tbl-30_1 input[type="file"],
+.tbl-30_1 textarea,
+.tbl-30_1 select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+/* Radio buttons */
+.tbl-30_1 input[type="radio"] {
+    margin-right: 6px;
+    margin-left: 10px;
+}
+
+/* Submit button */
+.btn-secondary {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 12px 30px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #218838;
+}

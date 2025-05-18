@@ -1,0 +1,92 @@
+-- Create database
+CREATE DATABASE IF NOT EXISTS food_order
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_0900_ai_ci;
+USE food_order;
+
+-- tbl_admin
+DROP TABLE IF EXISTS tbl_admin;
+CREATE TABLE tbl_admin (
+  id         INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  full_name  VARCHAR(100)     NOT NULL,
+  user_name  VARCHAR(100)     NOT NULL,
+  password   VARCHAR(100)     NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB
+  DEFAULT CHARSET=utf8mb4
+  COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO tbl_admin (id, full_name, user_name, password) VALUES
+  (14, 'Poun Sokha',    'pounsokha',    'admin123'),
+  (15, 'Leng seavminh', 'lengseavminh', 'admin123'),
+  (16, 'Ra Daroth',     'radaroth',     'admin123');
+
+-- tbl_category
+DROP TABLE IF EXISTS tbl_category;
+CREATE TABLE tbl_category (
+  id         INT NOT NULL AUTO_INCREMENT,
+  title      VARCHAR(100) NOT NULL,
+  image_name VARCHAR(250) NOT NULL,
+  featured   VARCHAR(10)  NOT NULL,
+  active     VARCHAR(10)  NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB
+  DEFAULT CHARSET=utf8mb4
+  COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO tbl_category (id, title, image_name, featured, active) VALUES
+  (55, 'Humberger',      '',                    'Yes', 'Yes'),
+  (56, 'Coffee Amazone', 'download.jfif',       'Yes', 'Yes'),
+  (57, 'Orang juice',    'images.jfif',         'Yes', 'Yes'),
+  (60, 'Juice',          'images.jfif',         'Yes', 'Yes'),
+  (61, 'Pork',           'images (12).jpg.jfif','Yes', 'Yes'),
+  (62, 'Ornage Juice',   'images (13).jpg.jfif','Yes', 'Yes');
+
+-- tbl_food
+DROP TABLE IF EXISTS tbl_food;
+CREATE TABLE tbl_food (
+  id          INT NOT NULL AUTO_INCREMENT,
+  title       VARCHAR(100) NOT NULL,
+  description VARCHAR(150) NOT NULL,
+  price       DECIMAL(10,2) NOT NULL,
+  image_name  VARCHAR(255) NOT NULL,
+  category_id INT          NOT NULL,
+  featured    VARCHAR(10)  NOT NULL,
+  active      VARCHAR(10)  NOT NULL,
+  PRIMARY KEY (id),
+  INDEX (category_id)
+) ENGINE=InnoDB
+  DEFAULT CHARSET=utf8mb4
+  COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO tbl_food (id, title, description, price, image_name, category_id, featured, active) VALUES
+  (25, 'Humberger', 'goods',  4.00, 'humberger.jpg',            55, 'Yes', 'No'),
+  (26, 'Pizza',     'Gooda', 30.00, 'images (14).jfif',         57, 'Yes', 'Yes'),
+  (27, 'Rice',      'goods', 15.00, 'images (11).jfif',         57, 'Yes', 'Yes'),
+  (31, 'Chicken',   'Goods', 12.00, 'images (10).jfif',         57, 'Yes', 'Yes'),
+  (32, 'dsaf',      'addf', 12.00,  'QR Code.jpg',               56, 'yes', 'yes');
+
+-- tbl_order
+DROP TABLE IF EXISTS tbl_order;
+CREATE TABLE tbl_order (
+  id               INT NOT NULL AUTO_INCREMENT,
+  food             VARCHAR(150) NOT NULL,
+  price            DECIMAL(10,2) NOT NULL,
+  qty              DECIMAL(10,2) NOT NULL,
+  total            DECIMAL(10,2) NOT NULL,
+  order_date       DATE NOT NULL,
+  status           VARCHAR(50) NOT NULL,
+  customer_name    VARCHAR(100) NOT NULL,
+  customer_contact VARCHAR(20)  NOT NULL,
+  customer_email   VARCHAR(100) NOT NULL,
+  customer_address VARCHAR(100) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB
+  DEFAULT CHARSET=utf8mb4
+  COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO tbl_order (id, food, price, qty, total, order_date, status, customer_name, customer_contact, customer_email, customer_address) VALUES
+  (12, 'Humberger',      4.00, 3.00, 12.00, '2025-04-25', 'Ordered', 'Sokha', '0967650501', 'wwwpounsokha@gmail.com', 'pp'),
+  (13, 'Coffee Amazone',15.00, 1.00, 15.00, '2025-04-26', 'Ordered', 'Sokha', '0967650501', 'wwwpounsokha@gmail.com', 'pp');
+
+COMMIT;
