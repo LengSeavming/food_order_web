@@ -1,5 +1,6 @@
-<?php include("../../order/menu.php"); ?>
-
+<?php include( "../../order/menu.php"); ?>
+<link rel="stylesheet" href="../../food/food.css">
+<link rel="stylesheet" href="admin.css">
 <div class="main-contant">
     <div class="wrapper">
         <h1>Add Admin</h1>
@@ -35,7 +36,7 @@
     </div>
 </div>
 
-<?php include("../../food/food.css"); ?>
+
 <?php 
  ///process data value from from and save in database
  //check wheather 
@@ -43,7 +44,7 @@
  {
     //button click
     //get data
-    include("connetion.php");
+    include(__DIR__ . '/../../connection.php');
     $fullname=$_POST['full_name'];
     $username=$_POST['user_name'];
     $password=$_POST['password']; 

@@ -1,5 +1,5 @@
 <?php 
-    include("../connetion.php");
+    include(__DIR__ . '/../connection.php');
     if(isset($_GET["id"]) AND isset($_GET['image_name']))
     {
         echo'Get value to Delete';

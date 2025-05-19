@@ -1,5 +1,5 @@
 <?php 
-    include("../connetion.php");
+    include(__DIR__ . '/../connection.php');
     include("../order/menu.php"); 
 ?>
 

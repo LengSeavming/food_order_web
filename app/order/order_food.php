@@ -209,7 +209,7 @@
     }
 </style>
 <?php
-include("../connetion.php");
+include(__DIR__ . '/../connection.php');
 ?>
 <body>
     <header>

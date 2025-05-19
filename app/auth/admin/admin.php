@@ -1,6 +1,6 @@
 <?php 
     include("../../order/menu.php");
-    include("../../connetion.php");
+    include(__DIR__.'/../../connection.php');
 ?>
 
      <!-- Main Contanc section -->
@@ -61,7 +61,7 @@
 
 
 
-<?php include("Footer_menu.php"); ?>
+<?php include("../../footer_page/footer_menu.php"); ?>
        <!-- foodr Edite -->
 </body>
 </html>

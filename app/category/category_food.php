@@ -1,5 +1,5 @@
 <?php
-    include("../connetion.php");
+    include(__DIR__ . '/../connection.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">

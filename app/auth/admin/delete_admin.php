@@ -1,5 +1,5 @@
 <?php
-    include("../../connetion.php");
+    include(__DIR__ . '/../../connection.php');
     $id=$_GET["id"];
     $sql="delete from tbl_admin WHERE id='$id'";
     $result=mysqli_query($conn,$sql);

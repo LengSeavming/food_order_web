@@ -1,6 +1,6 @@
 <?php
 include("../order/menu.php");
-include("../connetion.php");
+include(__DIR__ . '/../connection.php');
 if (isset($_GET['id'])) 
 {
     $id = $_GET['id'];

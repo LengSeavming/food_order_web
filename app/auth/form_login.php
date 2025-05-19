@@ -1,5 +1,5 @@
 <?php 
-    include("../connetion.php");
+    include(__DIR__ . '/../connection.php');
     // include("login_Check.php");
 ?>
 
@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
-    <link rel="stylesheet" href="Style_fome_login.css">
+    <link rel="stylesheet" href="style_form_login.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');

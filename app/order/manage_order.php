@@ -1,5 +1,6 @@
-<?php include("../order/menu.php");
-    include("../connetion.php");
+<?php 
+    include("../order/menu.php");
+    include(__DIR__ . '/../connection.php');
 ?>
 
 <div class="main-contant">

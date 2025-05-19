@@ -1,6 +1,6 @@
 <?php 
     include("../order/menu.php");
-    include("../app/connetion.php");
+    include(__DIR__ . '/../connection.php');
 ?>
  <?php
             if(isset($_POST['submit']))

@@ -64,7 +64,7 @@
     }
   </style>
 </head>
-<?php include("../connetion.php"); ?>
+<?php include(__DIR__ . '/../connection.php'); ?>
 <body>
 
 <?php
